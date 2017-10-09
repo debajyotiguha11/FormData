@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+</head>
+<style>
+div{
+color:red;
+position:fixed;
+top:200px;
+left:600px;+
+}
+</style>
+<body>
+<script src="./home.js"></script>
+<div id="demo">
+    <p>This is the first name of user</p>
+    <h1 id="firstdata"></h1>
+    <p>This is the last name of user</p>
+    <h1 id="seconddata"></h1>
+    <p>This is the list of order</p>
+    <h1 id="checkboxdta"></h1>
+    <p> This is the mode of payment</p>
+    <h1 id="radiobtndta"></h1>
+</div>
+<form onsubmit="handleSubmit()" action="./formdata.html">
+  <label> Please Enter your first name </label></br></br>
+  <input type="text" name="username" value="fname" id="fname"></br></br>
+  <label> Please Enter your last name </label></br></br>
+  <input type="text" name="username" value="lname" id="lname"></br></br>
+  <label> Please select food items you like </label></br></br>
+
+      <input type="checkbox" value="Rice" name="fooditem">Rice</input>
+      <input type="checkbox" value="Daal" name="fooditem">Daal</input>
+      <input type="checkbox" value="Chattani" name="fooditem">Chattani</input>
+      <input type="checkbox" value="Chicken" name="fooditem">Chicken</input>
+      <input type="checkbox" value="Pannir" name="fooditem">Pannir</input>
+      <input type="checkbox" value="Curd" name="fooditem">Curd</input>
+  </br></br></br>
+  <label> Please you like </label>
+    </br></br>
+      <input type="radio" value="Netbanking" name="modeOfPay">Netbanking</input>
+      <input type="radio" value="Paytm" name="modeOfPay">Paytm</input>
+      <input type="radio" value="craditcard" name="modeOfPay">craditcard</input>
+      <input type="radio" value="Debitcard" name="modeOfPay">Debitcard</input>
+  </br></br></br>
+  <input type="submit" value="submit!">
+
+</form>
+
+</body>
+</html>
+

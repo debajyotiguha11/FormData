@@ -1,6 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
  <meta charset="utf-8">
     <link href="./index.css" rel="stylesheet"></link>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -9,21 +26,33 @@
 
 <body>
 <script src="./home.js"></script>
+
 <div id="demo">
-    <h2>This is the first name of user</h2>
-    <h4 id="firstdata"></h4>
-    <h2>This is the last name of user</h2>
-    <h4 id="seconddata"></h4>
-    <h2>This is the list of order</h2>
-    <h4 id="checkboxdta"></h4>
-    <h2> This is the mode of payment</h2>
-    <h4 id="radiobtndta"></h4>
+<div style="overflow-x:auto;">
+  <table>
+    <tr>
+    <th><h2>First Name</h2></th>
+    <th><h2>Last Name</h2></th>
+    <th><h2>List Of Order</h2></th>
+    <th><h2>Payment Mode</h2></th>
+    </tr>
+    <tr>
+    <td><h4 id="firstdata"></h4></td>
+    
+    <td><h4 id="seconddata"></h4></td>
+    
+    <td><h4 id="checkboxdta"></h4></td>
+    
+    <td><h4 id="radiobtndta"></h4></td>
+	</tr>
+	</table>
+	</div>
 </div>
 <form onsubmit="handleSubmit(); return false;" class="form-group">
   <label> Please Enter your first name </label></br></br>
-  <input type="text" name="username" value="fname" id="fname"></br></br>
+  <input type="text" required name="username" value="fname" id="fname"></br></br>
   <label> Please Enter your last name </label></br></br>
-  <input type="text" name="username" value="lname" id="lname"></br></br>
+  <input type="text" required name="username" value="lname" id="lname"></br></br>
   <label> Please select food items you like </label></br></br>
 
       <input class="form-control" type="checkbox" value="Rice" name="fooditem">Rice</input>
@@ -33,7 +62,7 @@
       <input class="form-control" type="checkbox" value="Pannir" name="fooditem">Pannir</input>
       <input class="form-control" type="checkbox" value="Curd" name="fooditem">Curd</input>
   </br></br></br>
-  <label> Please you like </label>
+  <label> How would You like to make payment </label>
     </br></br>
       <input class="form-control" type="radio" value="Netbanking" name="modeOfPay">Netbanking</input>
       <input class="form-control" type="radio" value="Paytm" name="modeOfPay">Paytm</input>
@@ -41,9 +70,9 @@
       <input class="form-control" type="radio" value="Debitcard" name="modeOfPay">Debitcard</input>
   </br></br></br>
   <button type="submit" class="btn btn-success">Submit</button>
-
+  <button type="reset" onclick="ClearFields();">Clear</button>
 </form>
-
+</form>
 </body>
 </html>
 

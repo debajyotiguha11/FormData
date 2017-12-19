@@ -30,3 +30,9 @@ var j;
     }
 
 }
+function ClearFields(){
+document.getElementById("radiobtndta").innerHTML ="";
+document.getElementById("firstdata").innerHTML ="";
+document.getElementById("seconddata").innerHTML ="";
+document.getElementById("checkboxdta").innerHTML ="";
+}

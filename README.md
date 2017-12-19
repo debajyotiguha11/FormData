@@ -16,4 +16,4 @@ Follow these steps:
 ## Author
 ***[Pankaj Kumar](https://github.com/pank0509/)***
 ## Updated by
-***[Debjyoti Guha](http://coders.uphero.com/)***
+***[Debjyoti Guha](https://github.com/debajyotiguha11)***

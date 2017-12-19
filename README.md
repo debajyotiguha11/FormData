@@ -1,8 +1,6 @@
 # FormData
 Simple submitting and retrieving form data by html and javascript
-<p align="center">
-  <img src="https://github.com/debajyotiguha11/FormData/blob/master/Screenshot%20from%202017-12-19%2018-01-54.png" width="350"/>
-</p>
+![alt tag](https://github.com/debajyotiguha11/FormData/blob/master/Screenshot%20from%202017-12-19%2018-01-54.png)
 
 ## Contribute
 
